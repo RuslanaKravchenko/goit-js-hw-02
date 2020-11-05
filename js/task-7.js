@@ -8,10 +8,18 @@ const isLoginValid = function(login) {
 };
 
 const isLoginUnique = function(allLogins, login) {
-  if (allLogins.includes(login)) {
+for (let element of  allLogins) {
+ if (element === login) {
     return false;
-  }
-  return true;
+ }
+  
+}
+return true;
+  
+// if (allLogins.includes(login)) {
+  //   return false;
+  // }
+  // return true;
 };
 
 const addLogin = function(allLogins, login) {
